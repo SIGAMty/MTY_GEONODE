@@ -15,7 +15,7 @@ git+https://github.com/GeoNode/geonode-announcements.git@django_upgrade#egg=geon
 
 # Custom Dependencies
 
-git+https://github.com/cesar-benjamin/geonode-mapstore-client@django_upgrade#egg=django_geonode_mapstore_client
+git+https://github.com/SIGAMty/geonode-mapstore-client.git@master#egg=django_geonode_mapstore_client
 
 # GeoNode
 
