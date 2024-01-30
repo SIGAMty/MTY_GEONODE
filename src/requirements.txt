@@ -8,7 +8,6 @@
 
 git+https://github.com/GeoNode/dynamic-rest.git@master#egg=dynamic_rest
 git+https://github.com/GeoNode/pinax-notifications.git@django_upgrade#egg=pinax-notifications
-#git+https://github.com/GeoNode/geonode-mapstore-client.git@django_upgrade#egg=django_geonode_mapstore_client
 git+https://github.com/GeoNode/geonode-importer.git@django_upgrade#egg=geonode-importer
 git+https://github.com/GeoNode/geonode-user-messages.git@django_upgrade#egg=geonode-user-messages
 git+https://github.com/GeoNode/geonode-announcements.git@django_upgrade#egg=geonode-announcements
@@ -19,7 +18,7 @@ git+https://github.com/SIGAMty/geonode-mapstore-client.git@master#egg=django_geo
 
 # GeoNode
 
--e git+https://github.com/roicort/geonode.git@master#egg=GeoNode
+-e git+https://github.com/SIGAMty/geonode.git@master#egg=GeoNode
 
 # Wagtail 5 Dependencies
 
