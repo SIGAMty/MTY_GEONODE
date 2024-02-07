@@ -7,7 +7,7 @@
         Object.keys(localConfig.plugins).forEach((pageName) => {
             if (['dataset_edit_data_viewer','dataset_edit_style_viewer','dataset_embed','dataset_preview','dataset_viewer','dataset_viewer_mobile'].includes(pageName)) {
                 localConfig.plugins[pageName].forEach((plugin) => {
-                    if (['Map','ZoomIn','ZoomOut','MapThumbnail','OmniBar','Search','Locate','FitBounds','Legend','ScaleBox','BackgroundSelector'].includes(plugin.name)) {
+                    if (['Map','mapToolbar','ZoomIn','ZoomOut','MapThumbnail','OmniBar','Search','Locate','FitBounds','Legend','ScaleBox','BackgroundSelector'].includes(plugin.name)) {
                         plugin.cfg = _.merge(plugin.cfg, {
                             disablePluginIf: "{state('gnResourceData').subtype === 'tabular'}"
                         });
@@ -21,16 +21,6 @@
                 name: "DownloadResource"
             }
         );
-
-        /*localConfig.plugins['catalog'].forEach((plugin) => {
-            if(plugin.type === 'tab'){
-            plugin.cfg.detailsTabs.forEach((tab) => {
-                    if (tab.name === 'locations') {
-                        tab.disablePluginIf = "{state('gnResourceData').subtype === 'tabular'}"
-                    }
-                })
-            }
-        });*/
 
         localConfig.supportedLocales = {
             es: {code: "es-ES", description: "Español"}
