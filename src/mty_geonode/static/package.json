@@ -1,8 +1,8 @@
 {
-  "name": "beautiful_geonode",
+  "name": "mty_geonode",
   "version": "0.0.1",
   "author": "GeoNode Developers",
-  "description": "Static code and assets for beautiful_geonode",
+  "description": "Static code and assets for mty_geonode",
   "contributors": [
     {
     }

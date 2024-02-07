@@ -56,15 +56,15 @@ class AppConfig(BaseAppConfig):
         is_tabular = forms.BooleanField(label=_("Is tabular?"), required=False)
         cls.base_fields['is_tabular'] = is_tabular
 
-    def patch_dataset_save(self, sender, instance, created, **kwargs):
+    def patch_dataset_save(self, sender, instance, **kwargs):
         self._get_logger().info("Patching Dataset save")
         if instance.is_tabular:
             type(instance).objects.filter(pk=instance.pk).update(subtype='tabular')
-       
+
     def ready(self):
         super(AppConfig, self).ready()
         run_setup_hooks()
-
+        
         try:
             from geonode.layers.models import Dataset
             from geonode.layers.forms import DatasetForm
